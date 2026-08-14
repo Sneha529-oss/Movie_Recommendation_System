@@ -22,9 +22,7 @@ The recommendation model uses TF-IDF to convert movie information into numerical
 
 ---
 
-## ✨ Features
-
-### User Features
+## User Features
 * 🔍 Search for movies with autocomplete suggestions
 * 🎬 Get recommendations for similar movies
 * ⭐ Display movie ratings and other details
