@@ -216,48 +216,6 @@ Response:
 }
 ```
 
----
-
-## 🎓 Model Training
-
-### Using Demo Model
-
-The project includes a pre-trained demo model with 2,000 popular movies. No training needed!
-
-```bash
-# Demo model is in static/ directory
-export MODEL_DIR=./static
-python manage.py runserver
-```
-
-### Training Your Own Model
-
-Want to train on more movies or your own dataset? See the [**Training Guide**](training/guide.md) for:
-
-- 📖 Complete training documentation
-- 🎯 Configuration options (10K to 1M+ movies)
-- ⚙️ Performance tuning guidelines
-- 📊 Dataset requirements
-- 🔧 Advanced features
-
-**Quick Training Example:**
-
-```python
-from training.train import MovieRecommenderTrainer
-
-# Initialize trainer
-trainer = MovieRecommenderTrainer(
-    output_dir='./models',
-    use_dimensionality_reduction=True,
-    n_components=500
-)
-
-# Train on your dataset
-df, sim_matrix = trainer.train(
-    'path/to/your/dataset.csv',
-    quality_threshold='medium',  # low/medium/high
-    max_movies=100000            # Limit dataset size
-)
 ```
 ---
 
@@ -305,60 +263,6 @@ GET /api/health/
 ```
 
 For complete API documentation, see [PROJECT_GUIDE.md - API Reference](PROJECT_GUIDE.md#-api-reference)
-
----
-
-## ⚙️ Configuration
-
-### Environment Variables
-
-Create a `.env` file (optional for development):
-
-```env
-# Django Settings
-SECRET_KEY=your-secret-key-here
-DEBUG=True
-ALLOWED_HOSTS=localhost,127.0.0.1
-
-# Model Configuration
-MODEL_DIR=./models
-
-# Database (optional - defaults to SQLite)
-# DATABASE_URL=postgresql://user:password@localhost/dbname
-
-# Deployment
-# RENDER_EXTERNAL_HOSTNAME=your-app.onrender.com
-```
-
-### Using Different Models
-
-To switch between models, set the `MODEL_DIR` environment variable:
-
-```bash
-# Use demo model (2K movies)
-export MODEL_DIR=./static
-
-# Use your trained model (custom)
-export MODEL_DIR=./models
-
-# Use absolute path
-export MODEL_DIR=/path/to/your/models
-```
-
-For detailed configuration options, see [PROJECT_GUIDE.md - Configuration](PROJECT_GUIDE.md#-configuration)
-
----
-
-## 📊 Performance
-
-| Metric | Value |
-|--------|-------|
-| Recommendation Time | < 50ms |
-| Search Response | < 100ms |
-| Page Load | < 200ms |
-| Memory Usage | ~200MB (100K movies) |
-| Concurrent Users | 1000+ |
-| Model Size | 180MB (100K movies) |
 
 ---
 
