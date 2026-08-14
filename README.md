@@ -25,24 +25,34 @@ The recommendation model uses TF-IDF to convert movie information into numerical
 ## ✨ Features
 
 ### User Features
-🔍 Search for movies with autocomplete suggestions
-🎬 Get recommendations for similar movies
-⭐ Display movie ratings and other details
-🎭 Show movie genres and related information
-🔗 Quick links to Google and IMDb
-📱 Responsive and user-friendly interface
-⚡ Fast movie recommendations
-📊 Machine Learning-based recommendation system
+* 🔍 Search for movies with autocomplete suggestions
+* 🎬 Get recommendations for similar movies
+* ⭐ Display movie ratings and other details
+* 🎭 Show movie genres and related information
+* 🔗 Quick links to Google and IMDb
+* 📱 Responsive and user-friendly interface
+* ⚡ Fast movie recommendations
+* 📊 Machine Learning-based recommendation system
 
-### 🛠️ Technologies Used
-Python
-Django
-HTML / CSS
-JavaScript
-Pandas
-NumPy
-Scikit-learn
-SciPy
+## 🧠 How It Works
+
+1. The user searches for a movie.
+2. The system finds the selected movie in the dataset.
+3. Movie information is converted into numerical features using **TF-IDF**.
+4. **SVD** is used to reduce the feature dimensions.
+5. The system compares the selected movie with other movies.
+6. The most similar movies are displayed as recommendations.
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **Django**
+* **HTML / CSS**
+* **JavaScript**
+* **Pandas**
+* **NumPy**
+* **Scikit-learn**
+* **SciPy**
 
 ---
 
