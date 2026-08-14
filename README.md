@@ -1,6 +1,6 @@
 # 🎬 Movie Recommendation System
 
-> A production-ready, AI-powered movie recommendation system built with Django and advanced machine learning. Scalable from thousands to millions of movies.
+> A movie recommendation web application that suggests movies based on the similarity between movies. I built this project using Django, Python, and Machine Learning with a content-based recommendation approach.
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-6.0-green.svg)](https://djangoproject.com/)
@@ -14,21 +14,35 @@ The Movie Recommendation System provides intelligent movie suggestions using **c
 
 ![Header Image](./assets/images-for-readme/Header.png)
 
+## 📌 About the Project
 
-### Why This Project?
+The system allows users to search for a movie and get a list of similar movies based on their content such as genres, overview, keywords, and other movie information.
 
-- ✅ **Production Ready** - Security hardened, optimized, well-documented
-- ✅ **Scalable Architecture** - Handles millions of movies efficiently
-- ✅ **Modern Tech Stack** - Django 5.0, Python 3.10+, advanced ML
-- ✅ **Easy to Use** - Simple installation, clear documentation
-- ✅ **Flexible** - Train your own models or use demo models
+The recommendation model uses TF-IDF to convert movie information into numerical features and SVD to reduce the dimensionality of the data and make recommendations more efficient.
 
-### Key Technologies
+---
 
-- **Backend**: Django 6.0, Python 3.10+
-- **ML/Data**: scikit-learn, pandas, numpy, scipy
-- **Storage**: Parquet (efficient data format)
-- **Deployment**: Render, Heroku, Docker compatible
+## ✨ Features
+
+### User Features
+🔍 Search for movies with autocomplete suggestions
+🎬 Get recommendations for similar movies
+⭐ Display movie ratings and other details
+🎭 Show movie genres and related information
+🔗 Quick links to Google and IMDb
+📱 Responsive and user-friendly interface
+⚡ Fast movie recommendations
+📊 Machine Learning-based recommendation system
+
+### 🛠️ Technologies Used
+Python
+Django
+HTML / CSS
+JavaScript
+Pandas
+NumPy
+Scikit-learn
+SciPy
 
 ---
 
@@ -45,74 +59,6 @@ The Movie Recommendation System provides intelligent movie suggestions using **c
 ### Movie Search Recommendations
 
 ![Movie Recommendations](./assets/images-for-readme/Results.png)
-
----
-
-## ✨ Features
-
-### User Features
-- 🔍 **Smart Search** - Real-time autocomplete with fuzzy matching
-- 🎬 **AI Recommendations** - Content-based filtering with 15+ suggestions
-- ⭐ **Rich Metadata** - Ratings, votes, genres, production companies
-- 🔗 **External Links** - Google Search and IMDb integration
-- 📱 **Responsive Design** - Works seamlessly on all devices
-- ⚡ **Fast Performance** - Sub-50ms recommendation generation
-
-### Technical Features
-- 🤖 **Advanced ML** - TF-IDF + SVD dimensionality reduction
-- 📊 **Scalable** - Handles 2K to 1M+ movies
-- 💾 **Efficient Storage** - Parquet format with compression
-- 🔧 **Configurable** - Easy model switching via `MODEL_DIR`
-- 📡 **REST API** - JSON endpoints for integration
-- 🔒 **Secure** - Production-ready security settings
-- 📝 **Logging** - Comprehensive error tracking
-- 🚀 **Deployment Ready** - Render, Heroku, Docker configs included
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.10 or higher
-- pip package manager
-- 8GB RAM (recommended for training)
-- Git
-
-### Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/yourusername/movie-recommendation-system.git
-cd movie-recommendation-system
-
-# 2. Create virtual environment
-python -m venv venv
-
-# 3. Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
-# 4. Install dependencies
-pip install -r requirements.txt
-
-# 5. Run database migrations
-python manage.py migrate
-
-# 6. Start the development server
-python manage.py runserver
-```
-
-### Access the Application
-
-Open your browser and navigate to:
-```
-http://localhost:8000
-```
-
-That's it! The demo model (2K movies) is included and works out of the box. 🎉
 
 ---
 
@@ -172,102 +118,15 @@ movie-recommendation-system/
 
 ---
 
-## 💡 Usage
-
-### Web Interface
-
-1. **Search for a Movie**
-   - Go to `http://localhost:8000`
-   - Start typing a movie name in the search box
-   - Select from autocomplete suggestions or type the full name
-
-2. **View Recommendations**
-   - Click "Get Recommendations"
-   - Browse 15 similar movie suggestions
-   - Each card shows: rating, release date, genres, production company
-
-3. **Explore Movies**
-   - Click "Google" to search for the movie
-   - Click "IMDb" to view on IMDb (if available)
-
-### API Usage
-
-#### Search Movies (Autocomplete)
-```bash
-GET /api/search/?q=matrix
-
-Response:
-{
-  "movies": ["The Matrix", "The Matrix Reloaded", "The Matrix Revolutions"],
-  "count": 3
-}
-```
-
-#### Health Check
-```bash
-GET /api/health/
-
-Response:
-{
-  "status": "healthy",
-  "movies_loaded": 100000,
-  "model_dir": "./models",
-  "model_loaded": true
-}
-```
-
-```
----
-
-## 📡 API Reference
-
-### Endpoints
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/` | GET | Home page with search interface |
-| `/` | POST | Submit movie search and get recommendations |
-| `/api/search/` | GET | Search movies (autocomplete) |
-| `/api/health/` | GET | Health check endpoint |
-
-### Search Movies
-
-**Request:**
-```http
-GET /api/search/?q=inception
-```
-
-**Response:**
-```json
-{
-  "movies": ["Inception", "Inception: The Cobol Job"],
-  "count": 2
-}
-```
-
-### Health Check
-
-**Request:**
-```http
-GET /api/health/
-```
-
-**Response:**
-```json
-{
-  "status": "healthy",
-  "movies_loaded": 100000,
-  "model_dir": "./models",
-  "model_loaded": true
-}
-```
-
-For complete API documentation, see [PROJECT_GUIDE.md - API Reference](PROJECT_GUIDE.md#-api-reference)
-
----
+🚀 Future Improvements
+Add user-based recommendations using ratings and watch history
+Improve recommendations using collaborative filtering
+Add movie posters and trailers
+Add user accounts and personalized recommendations
+Improve the recommendation model with additional movie features
 
 <div align="center">
 
-**Made with ❤️ for movie lovers and developers**
+Built as a Machine Learning + Web Development project to explore recommendation systems and Django.
 
 </div>
