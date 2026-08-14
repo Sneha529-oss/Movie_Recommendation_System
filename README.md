@@ -124,12 +124,12 @@ movie-recommendation-system/
 ---
 
 🚀 Future Improvements
-Add user-based recommendations using ratings and watch history
-Improve recommendations using collaborative filtering
-Add movie posters and trailers
-Add user accounts and personalized recommendations
-Improve the recommendation model with additional movie features
-
+* Add user-based recommendations using ratings and watch history
+* Improve recommendations using collaborative filtering
+* Add movie posters and trailers
+* Add user accounts and personalized recommendations
+* Improve the recommendation model with additional movie features
+  
 <div align="center">
 
 Built as a Machine Learning + Web Development project to explore recommendation systems and Django.
