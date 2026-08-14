@@ -7,27 +7,6 @@
 
 ---
 
-![Logo Image](./assets/images-for-readme/Logo.png)
-
----
-
-## 📑 Table of Contents
-
-- [Overview](#-overview)
-- [Screenshots](#-screenshots)
-- [Features](#-features)
-- [Quick Start](#-quick-start)
-- [Project Structure](#-project-structure)
-- [Usage](#-usage)
-- [Model Training](#-model-training)
-- [API Reference](#-api-reference)
-- [Configuration](#-configuration)
-- [Documentation](#-documentation)
-- [Contributing](#-contributing)
-- [License](#-license)
-
----
-
 ## 🎯 Overview
 
 The Movie Recommendation System provides intelligent movie suggestions using **content-based filtering** with TF-IDF and SVD dimensionality reduction. It features a modern web interface, RESTful API, and supports datasets from 2K to 1M+ movies.
@@ -54,10 +33,6 @@ The Movie Recommendation System provides intelligent movie suggestions using **c
 ---
 
 ## 📸 Screenshots & Demo
-
-### Demo Video
-
-![Application Demo](./assets/demo-video/Application-Demo.gif)
 
 ### Model Loading
 
@@ -284,11 +259,6 @@ df, sim_matrix = trainer.train(
     max_movies=100000            # Limit dataset size
 )
 ```
-
-**For detailed training instructions**, see:
-- 📘 [Training Guide](training/guide.md) - Complete training documentation
-- 📘 [PROJECT_GUIDE.md](PROJECT_GUIDE.md#-model-training) - Training setup and configurations
-
 ---
 
 ## 📡 API Reference
@@ -379,122 +349,6 @@ For detailed configuration options, see [PROJECT_GUIDE.md - Configuration](PROJE
 
 ---
 
-## 📚 Documentation
-
-### Main Documentation
-
-- **[README.md](README.md)** (this file) - Overview, quick start, basic usage
-- **[PROJECT_GUIDE.md](PROJECT_GUIDE.md)** - Complete technical guide
-  - Installation
-  - Model training
-  - Configuration
-  - Development
-  - Deployment
-  - API reference
-  - Troubleshooting
-- **[CHANGELOG.md](CHANGELOG.md)** - Version history and changes
-
-### Training Documentation
-
-- **[training/guide.md](training/guide.md)** - Complete model training guide
-  - Dataset requirements
-  - Training configurations
-  - Performance tuning
-  - Advanced features
-
-### Quick Links
-
-| Topic | Documentation |
-|-------|---------------|
-| Installation | [Quick Start](#-quick-start) or [PROJECT_GUIDE.md](PROJECT_GUIDE.md#-installation) |
-| Model Training | [training/guide.md](training/guide.md) |
-| Deployment | [PROJECT_GUIDE.md - Deployment](PROJECT_GUIDE.md#-deployment) |
-| API Reference | [API Reference](#-api-reference) or [PROJECT_GUIDE.md](PROJECT_GUIDE.md#-api-reference) |
-| Troubleshooting | [PROJECT_GUIDE.md - Troubleshooting](PROJECT_GUIDE.md#-troubleshooting) |
-| Configuration | [Configuration](#-configuration) or [PROJECT_GUIDE.md](PROJECT_GUIDE.md#-configuration) |
-
----
-
-## 🚀 Deployment
-
-### Quick Deploy to Render
-
-1. Push your code to GitHub
-2. Connect repository to [Render](https://render.com)
-3. Render auto-detects `render.yaml`
-4. Set environment variables
-5. Deploy!
-
-### Other Platforms
-
-- **Heroku**: Uses `Procfile`
-- **Docker**: Create Dockerfile from PROJECT_GUIDE
-- **AWS**: Elastic Beanstalk compatible
-- **Digital Ocean**: App Platform ready
-
-For detailed deployment instructions, see [PROJECT_GUIDE.md - Deployment](PROJECT_GUIDE.md#-deployment)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Guidelines
-
-- Follow PEP 8 style guide
-- Add tests for new features
-- Update documentation
-- Keep commits focused and descriptive
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🆘 Support
-
-Need help? Here are your options:
-
-- 📖 **Documentation**: Check [PROJECT_GUIDE.md](PROJECT_GUIDE.md) for detailed guides
-- 🎓 **Training Help**: See [training/guide.md](training/guide.md) for model training
-- 🐛 **Issues**: [Open an issue](https://github.com/yourusername/movie-recommendation-system/issues) on GitHub
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/movie-recommendation-system/discussions)
-
----
-
-## 🎯 Roadmap
-
-### Version 2.1 (Planned)
-- [ ] User authentication system
-- [ ] Personal watchlists
-- [ ] Movie rating system
-- [ ] Advanced filtering (multiple genres, year ranges)
-- [ ] Recommendation history
-
-### Version 2.2 (Planned)
-- [ ] Collaborative filtering
-- [ ] Social features (sharing, comments)
-- [ ] Movie reviews
-- [ ] Advanced analytics dashboard
-
-### Version 3.0 (Long-term)
-- [ ] Mobile applications (iOS/Android)
-- [ ] Real-time recommendations
-- [ ] Streaming service integration
-- [ ] Enhanced ML models (hybrid recommendations)
-
----
-
 ## 📊 Performance
 
 | Metric | Value |
@@ -508,21 +362,8 @@ Need help? Here are your options:
 
 ---
 
-## 🙏 Acknowledgments
-
-- Movie data from TMDB and IMDb
-- Built with Django, scikit-learn, pandas
-- UI inspired by modern design principles
-- Community contributions and feedback
-
----
-
 <div align="center">
 
 **Made with ❤️ for movie lovers and developers**
-
-[⭐ Star this repo](https://github.com/yourusername/movie-recommendation-system) •
-[🐛 Report Bug](https://github.com/yourusername/movie-recommendation-system/issues) •
-[💡 Request Feature](https://github.com/yourusername/movie-recommendation-system/issues)
 
 </div>
