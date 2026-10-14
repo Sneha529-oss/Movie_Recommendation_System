@@ -20,14 +20,14 @@ The recommendation model uses TF-IDF to convert movie information into numerical
 ---
 
 ## User Features
-* 🔹 Search for movies with autocomplete suggestions
-* 🔹 Get recommendations for similar movies
-* 🔹 Display movie ratings and other details
-* 🔹 Show movie genres and related information
-* 🔹 Quick links to Google and IMDb
-* 🔹 Responsive and user-friendly interface
-* 🔹 Fast movie recommendations
-* 🔹 Machine Learning-based recommendation system
+*  Search for movies with autocomplete suggestions
+*  Get recommendations for similar movies
+*  Display movie ratings and other details
+*  Show movie genres and related information
+*  Quick links to Google and IMDb
+*  Responsive and user-friendly interface
+*  Fast movie recommendations
+*  Machine Learning-based recommendation system
 
 ## 🔸 How It Works
 
