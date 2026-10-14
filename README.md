@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Overview
+## 🔸 Overview
 
 The Movie Recommendation System provides intelligent movie suggestions using **content-based filtering** with TF-IDF and SVD dimensionality reduction. It features a modern web interface, RESTful API, and supports datasets from 2K to 1M+ movies.
 
@@ -20,16 +20,16 @@ The recommendation model uses TF-IDF to convert movie information into numerical
 ---
 
 ## User Features
-* 🔍 Search for movies with autocomplete suggestions
-* 🎬 Get recommendations for similar movies
-* ⭐ Display movie ratings and other details
-* 🎭 Show movie genres and related information
-* 🔗 Quick links to Google and IMDb
-* 📱 Responsive and user-friendly interface
-* ⚡ Fast movie recommendations
-* 📊 Machine Learning-based recommendation system
+* 🔹 Search for movies with autocomplete suggestions
+* 🔹 Get recommendations for similar movies
+* 🔹 Display movie ratings and other details
+* 🔹 Show movie genres and related information
+* 🔹 Quick links to Google and IMDb
+* 🔹 Responsive and user-friendly interface
+* 🔹 Fast movie recommendations
+* 🔹 Machine Learning-based recommendation system
 
-## 🧠 How It Works
+## 🔸 How It Works
 
 1. The user searches for a movie.
 2. The system finds the selected movie in the dataset.
@@ -38,7 +38,7 @@ The recommendation model uses TF-IDF to convert movie information into numerical
 5. The system compares the selected movie with other movies.
 6. The most similar movies are displayed as recommendations.
 
-## 🛠️ Technologies Used
+## 🔹 Technologies Used
 
 * **Python**
 * **Django**
@@ -123,7 +123,7 @@ movie-recommendation-system/
 
 ---
 
-🚀 Future Improvements
+🔸 Future Improvements
 * Add user-based recommendations using ratings and watch history
 * Improve recommendations using collaborative filtering
 * Add movie posters and trailers
